@@ -1,0 +1,337 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*
+.ipann {
+    display: none;
+}
+*/
+body {
+    background-color: #000;
+    min-height: 200vh;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    padding: 40px 100px;
+    z-index: 10000;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.705);
+
+}
+
+/*rgb(248, 190, 0)*/
+.sticky {
+    padding: 5px 100px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius:0 0 10px 10px;
+
+}
+
+.sticky .logo, .sticky ul li a{
+    color: black;
+    text-shadow: 0 0 0;
+    text-decoration: none;
+
+}
+.sticky .logo:hover, .sticky ul li a:hover {
+    color: black;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: 0.5s;
+    cursor:default;
+    float: left;
+
+}
+header .logo:hover {
+    text-decoration: none;
+    color: white;
+}
+header ul li a:hover {
+    text-decoration: none;
+    color: yellow;
+    border: #000;
+}
+
+header ul {
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    text-decoration: none;
+
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 16px;
+    text-decoration: none;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.5s;
+    text-decoration: none;
+
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.sect1 {
+    position: relative;
+    width: 100%;
+    height: 140vh;
+    background-color: rgb(19, 25, 25);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.sect1 .title {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-shadow: 1px 5px rgb(0, 0, 0);
+}
+
+.footer {
+    position: relative;
+    margin-top: -10px;
+    width: 100%;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    border-radius:10px 10px 0 0;
+    align-items: center;
+    display: flex;
+
+}
+
+.footer p {
+    position: relative;
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin: 12px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    cursor:default;
+}
+
+.sect1 .cadre {
+    height: 110vh;
+    width: 85%;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 1px 5px 20px rgb(0, 0, 0);
+}
+
+.sect1 .cadre .produits {
+    background-color: rgb(174, 178, 177);
+    justify-content: center;
+    align-items: center;
+    display: list-item;
+    
+}
+.cartprod {
+    width: 500px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 12px auto;
+    display: flex;
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.61);
+}
+.cartprod img {
+    width: 100px;
+    transition: 0.4s;
+}
+.cartprod img:hover{
+    transform: scale(1.8);
+    transition: 0.4s;
+}
+.cartprod span {
+    margin: 0 auto;
+}
+.cartprod p {
+    line-break: loose;
+}
+.cartprod i {
+    margin-top: 35px;
+    height: 10px;
+}
+.cartprod i:hover{
+    cursor: pointer;
+}
+.cartprod button {
+    height: 40px;
+    width: 80px;
+    margin: auto;
+    background-color: rgb(174, 178, 177);
+    color: white;
+    font-weight: 900;
+    border-radius: 5px;
+    border-width: 0px;
+    transition: 0.4s;
+}
+.cartprod button:hover{
+    cursor: pointer;
+    background-color: rgb(19, 19, 167);
+    transition: 0.4s;
+}
+.cadrefac {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+    margin-top: 100px;
+    padding: auto;
+}
+.cadrefac .facture {
+    margin-left: 15px;
+    background-color: whitesmoke;
+    width: 180px;
+    height: 100px;
+    display: block;
+    border-radius: 12px;
+}
+.lib {
+    margin-top: 20px;
+}
+.lib p {
+    text-align: right;
+    font-weight: 700;
+
+}
+.facture {
+    padding-top: 20px;
+}
+.facture p {
+    text-align: center;
+    font-weight: 800;
+}
+.sect1 .cadre .panier {
+    background-color: rgb(19, 25, 25);
+}
+.fig {
+    border-radius: 10px;
+    width: 580px;
+    height: 100vh;
+    margin: auto 0;
+    position: relative;
+}
+.newitem {
+    position: relative;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0 20px ;
+}
+.nameitem {
+    background-color: whitesmoke;
+    width: 350px;
+    border-radius: 50px;
+    text-align: center;
+}
+.newqty {
+    border-radius: 50px;
+    width: 40px;
+    text-align: center;
+}
+.fa {
+    padding: 2px;
+
+}
+.add {
+    background-color: rgb(221, 167, 1);
+    color: white;
+    font-weight: 900;
+    width: 80px;
+    border-radius: 5px;
+    border-width: 0px;
+    transition: 0.4s;
+}
+.add:hover{
+    cursor: pointer;
+    background-color: rgb(214, 133, 4);
+    border-radius: 20px;
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+.listnewitem {
+    display: inline-block;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+.itemadded {
+    margin: 20px auto;
+    position: relative;
+    background-color: whitesmoke;
+    width: 500px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+.itemadded input {
+    border: none;
+    background-color: whitesmoke;
+    width: 500px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+
+}

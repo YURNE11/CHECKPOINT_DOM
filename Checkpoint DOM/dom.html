@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dom.css">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Document Object Model</title>
+</head>
+<body style="background-color: black;">
+            <header>
+                <a href="#" class="logo">wilsmail</a>
+                <ul>
+                    <li><a href="#">[Mon Shopping<i class="fa fa-shopping-cart"></i>]</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                </ul>
+            </header>
+        <section class="banner"></section>
+
+
+        <section class="sect1">
+            <div class="title">
+                <p class="right">Start your shopping my Guy !</p>
+                <p class="left">What other article would you like ?</p>
+            </div>
+
+            <div class="cadre">
+
+                <section class="produits fig">
+                    <div class="cartprod">
+                        <img src="img/02.jpg" alt="">
+                        <span><h3 style="margin-bottom: 0;">Air jordan</h3><h6 class="price">30 000 FCFA</h6> </span>
+                        <i class="fa fa-heart-o like"></i>
+                        <button type="button" class="buy" id="1">Buy</button>
+                    </div>
+                    <div class="cartprod">
+                        <img src="img/03.jpg" alt="">
+                        <span><h3 style="margin-bottom: 0;">Air jordan</h3><h6 class="price">43 000 FCFA</h6> </span>
+                        <i class="fa fa-heart-o like"></i>
+                        <button type="button" class="buy" id="2">Buy</button>
+                    </div>
+                    <div class="cartprod">
+                        <img src="img/07.jpg" alt="">
+                        <span><h3 style="margin-bottom: 0;">Air jordan</h3><h6 class="price">30 000 FCFA</h6> </span>
+                        <i class="fa fa-heart-o like"></i>
+                        <button type="button" class="buy" id="3">Buy</button>
+                    </div>
+                    <div class="cartprod">
+                        <img src="img/08.jpg" alt="">
+                        <span><h3 style="margin-bottom: 0;">Air jordan</h3><h6 class="price">60 000 FCFA</h6></span>
+                        <i class="fa fa-heart-o like"></i>
+                        <button type="button" class="buy" id="4">Buy</button>
+                    </div>
+                    <div class="cadrefac">
+                        <span class="lib">
+                            <p>TOTAL:</p>
+                            <p>MTTC (TVA 18%):</p>
+                        </span>
+                        <div class="facture">
+                            <p class="total">0 FCFA</p>
+                            <p class="mttc">0 FCFA</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="panier fig">
+                    <div class="newitem">
+                        <input type="text" id="producName" placeholder="article's description..." maxlength="42" class="nameitem" value="">
+                        <button type="button" class="minus"><i class="fa fa-minus-circle"></i></button>
+                        <input type="number" name="qty" id="qty" class="newqty" value="0" max="10" disabled style="background-color: whitesmoke;" >
+                        <button type="button" class="plus"><i class="fa fa-plus-circle"></i></button>
+                        <button type="button" class="add" >Add</button>
+                    </div>
+                    <div class="listnewitem">
+                    </div>
+                </section>
+            </div>
+        </section>
+
+
+        <section class="footer">
+            <p>&#9813; Design by WILSMAIL &#9813;</p>
+        </section>
+
+
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <script src="js/dom.js"></script>
+</body>
+</html>
